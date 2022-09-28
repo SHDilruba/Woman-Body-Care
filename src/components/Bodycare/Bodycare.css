@@ -1,0 +1,21 @@
+.main-container{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+.activities-container img{
+    border-radius: 50px;
+    margin-top: 20px;
+}
+#owner-detail p{
+    margin: 0;
+}
+#owner-detail h5{
+    margin: 0;
+}
+#owner-detail{
+  display: flex;
+  align-items: center;
+}
+#owner-detail img{
+     margin-right: 10px;
+}

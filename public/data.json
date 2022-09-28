@@ -1,0 +1,50 @@
+[
+  {
+    "id": "63349ca1abf36b50eb246e01",
+    "picture": "https://images.pexels.com/photos/4754143/pexels-photo-4754143.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "name": "Boxing Program",
+    "description": "High-intensity women’s boxing classes combine cardio, strength, coordination and balance by utilizing traditional boxing moves.\r\n",
+    "Age": 25,
+    "time": 15
+  },
+  {
+    "id": "63349ca1adcf41ad57445246",
+    "picture": "https://images.pexels.com/photos/416778/pexels-photo-416778.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "name": "Cardio program",
+    "description": "High-intensity cardio classes that incorporate all facets of fitness, including strength training, cardio, speed, power, flexibility, coordination and agility.\r\n",
+    "Age": 20,
+    "time": 10
+  },
+  {
+    "id": "63349ca16ac016add6b55dc3",
+    "picture": "https://images.pexels.com/photos/4662344/pexels-photo-4662344.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "name": "Body Basic Program",
+    "description": "Medium to low-intensity women’s fitness classes focusing on strength-based functional movements that emphasize the arms, core and legs.\r\n",
+    "Age": 18,
+    "time": 15
+  },
+  {
+    "id": "63349ca17f17c7f65d15b477",
+    "picture": "https://images.pexels.com/photos/1552249/pexels-photo-1552249.jpeg?cs=srgb&dl=pexels-leon-ardho-1552249.jpg&fm=jpg",
+    "name": "Weight Loss Program",
+    "description": "Weight Loss training has gotten more and more popular, as people rise up to the challenge of military exercises, pushing themselves to the limit. We provide the opportunity to experience this intense workout.\r\n",
+    "Age": 25,
+    "time": 30
+  },
+  {
+    "id": "63349ca1fa65c07039f1119d",
+    "picture": "https://images.pexels.com/photos/136404/pexels-photo-136404.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "name": "Belly Fat Blast Program",
+    "description": "Your old clothes don’t fit? You easily get tired? You dream about a firm and toned body, but you’re not sure how to achieve it? Our specialists at Women Body care can guarantee you results!\r\n",
+    "Age": 25,
+    "time": 25
+  },
+  {
+    "id": "63349ca1fa65c07039f1119d",
+    "picture": "https://images.pexels.com/photos/3076509/pexels-photo-3076509.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "name": "Balance Program",
+    "description": "Low-intensity balance classes are designed to help improve stability and create a strong core, using traditional yoga movements and poses.\r\n",
+    "Age": 18,
+    "time": 20
+  }
+]
