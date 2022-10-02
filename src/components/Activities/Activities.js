@@ -7,7 +7,13 @@ const Activities = (props) => {
   const {activities} = props;
 
   const [breakTimes, setBreakTimes] = useState([]);
- 
+
+  const addToCart = (breakTimes) =>{
+   const time = breakTimes.target.innerText;
+   setBreakTimes(time)
+   localStorage.setItem('breakTimes', JSON.stringify(time))
+  }
+
   return (
     <div className="activities-container bg-warning">      
        <div id='profile-detail'>                   
@@ -42,7 +48,7 @@ const Activities = (props) => {
               <h5 className='mt-5 mb-3'>Experience Details</h5>
                 <div className='exercise-time bg-light py-2 ps-3'>Exercise time <span className='ms-5 ps-4'></span>
                 </div>
-                  <div className='br-time bg-light mt-3 py-2 ps-3'>Break time <span className='ms-5 ps-5'></span> 
+                  <div className='br-time bg-light mt-3 py-2 ps-3'>Break time <span className='ms-5 ps-5'>{breakTimes}</span> 
                  </div>
              </div>
           </div> 
