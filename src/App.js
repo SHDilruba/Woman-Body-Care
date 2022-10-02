@@ -6,7 +6,7 @@ function App() {
   return (
     <div>
        <Bodycare></Bodycare>
-       <Activities></Activities>
+       {/* <Activities></Activities> */}
     </div>
   );
 }

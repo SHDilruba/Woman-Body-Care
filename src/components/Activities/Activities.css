@@ -1,0 +1,48 @@
+.activities-container img{
+  border-radius: 30px;
+  margin-top: 20px;
+}
+#profile-detail p{
+  margin: 0;
+}
+#profile-detail h5{
+  margin: 0;
+}
+#profile-detail{
+display: flex;
+align-items: center;
+padding-top: 10px;
+}
+#profile-detail img{
+margin-right: 10px;
+}
+#profile-quality{
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ margin-top: 10px;
+ text-align: center;
+ border-radius: 10px;
+}
+#profile-quality p{
+  margin: 0;
+}
+.break-time{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 7px;
+}
+.break-time button{
+  background-color: white;
+  margin-right: 5px;
+  margin-left: 5px;
+  padding: 5px;
+  border-radius: 3px;
+}
+.exercise-time{
+  border-radius: 8px;
+}
+.br-time{
+  border-radius: 8px;
+}

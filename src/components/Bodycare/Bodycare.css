@@ -8,41 +8,12 @@
     order: 1;
 }
 .activities-container{
+  position: sticky;
+  top: 0;
     grid-template-columns: 1fr;
     order: 2;
-    border: 1px solid lightgray;
-    padding: 15px;
+    padding: 0px 18px 70px 18px;
 }
-.activities-container img{
-    border-radius: 50px;
-    margin-top: 20px;
-  }
-  #profile-detail p{
-    margin: 0;
-  }
-  #profile-detail h5{
-    margin: 0;
-  }
-  #profile-detail{
-  display: flex;
-  align-items: center;
-  }
-  #profile-detail img{
-  margin-right: 10px;
-  }
-  #profile-quality{
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   margin-top: 10px;
-   text-align: center;
-   border: 1px solid gray;
-   border-radius: 10px;
-  }
-  #profile-quality p{
-    margin: 0;
-  }
-
 
 @media only screen and (max-width: 600px){
 .main-container{
@@ -50,6 +21,9 @@
 }
 .activities-container{
     order: 1;
+    position: static;
+    margin-top: 20px;
+    padding-bottom: 30px;
 } 
 .programs-container{
     order: 2;

@@ -3,10 +3,11 @@ import {faDumbbell} from '@fortawesome/free-solid-svg-icons'
 import React, { useEffect, useState } from 'react';
 import Programs from '../Programs/Programs';
 import'./Bodycare.css';
+import Activities from '../Activities/Activities';
 
 const Bodycare = () => {
   const [programs, setPrograms] = useState([]);
-  // const [activities, setActivities] = useState([]);
+  const [activities, setActivities] = useState([]);
 
   useEffect( () =>{
     fetch('data.json')
@@ -15,7 +16,8 @@ const Bodycare = () => {
   } ,[])
 
   const handleAddToCart = (program) =>{
-     console.log(program)
+     const newActivities = [...activities, program];
+     setActivities(newActivities);
   }
 
   return (
@@ -27,28 +29,13 @@ const Bodycare = () => {
               {
                programs.map(program => <Programs program={program} key={program.id} handleAddToCart={handleAddToCart} ></Programs>)
               }
-          </div>
-       </div>                     
-          <div className="activities-container mt-3">
-              <div id='profile-detail'>
-                 <img src="https://images.pexels.com/photos/7500712/pexels-photo-7500712.jpeg?auto=compress&cs=tinysrgb&w=600" height={60} width={50} alt="" />           
-                   <div className='pt-3'>
-                     <h5 className='text-warning'>Sayeda Yasmin</h5>
-                    <p><small>Palermo, Italy</small></p>
-                </div>  
-            </div>
-       <div id='profile-quality' className='px-3  py-1 bg-light '>
-           <div className='years ps-3'>
-             <p>Years:</p>
-             <p> 28</p>
            </div>
-              <div className='experience pe-3'>
-                 <p>Experience:</p>
-                 <p> 5 years</p>
-              </div>
+       </div>
+          <div className="activities-container ">
+          <Activities activities={activities}></Activities>
+                               
           </div>
-        </div>
-    </div>
+      </div>
      )
   }
  
