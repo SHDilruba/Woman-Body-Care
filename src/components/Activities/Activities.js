@@ -6,6 +6,10 @@ import {faLocationDot} from '@fortawesome/free-solid-svg-icons'
 const Activities = (props) => {
   const {activities} = props;
 
+  let totalTime = 0;
+  for(const exerciseTime of activities){
+     totalTime = totalTime + exerciseTime.time;
+  }
   const [breakTimes, setBreakTimes] = useState([]);
 
   const addToCart = (breakTimes) =>{
@@ -46,7 +50,7 @@ const Activities = (props) => {
           </div>
             <div>
               <h5 className='mt-5 mb-3'>Experience Details</h5>
-                <div className='exercise-time bg-light py-2 ps-3'>Exercise time <span className='ms-5 ps-4'></span>
+                <div className='exercise-time bg-light py-2 ps-3'>Exercise time <span className='ms-5 ps-4'>{totalTime}m</span>
                 </div>
                   <div className='br-time bg-light mt-3 py-2 ps-3'>Break time <span className='ms-5 ps-5'>{breakTimes}</span> 
                  </div>
