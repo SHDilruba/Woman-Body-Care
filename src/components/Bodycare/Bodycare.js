@@ -32,8 +32,7 @@ const Bodycare = () => {
            </div>
        </div>
           <div className="activities-container ">
-          <Activities activities={activities}></Activities>
-                               
+          <Activities activities={activities}></Activities>                  
           </div>
       </div>
      )
