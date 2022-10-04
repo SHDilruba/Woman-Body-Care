@@ -4,6 +4,7 @@ import React, { useEffect, useState } from 'react';
 import Programs from '../Programs/Programs';
 import'./Bodycare.css';
 import Activities from '../Activities/Activities';
+import Blog from '../Blog/Blog';
 
 const Bodycare = () => {
   const [programs, setPrograms] = useState([]);
@@ -15,7 +16,7 @@ const Bodycare = () => {
     .then(data => setPrograms(data))
   } ,[])
 
-  const handleAddToCart = (program) =>{
+  const handleAddToList = (program) =>{
      const newActivities = [...activities, program];
      setActivities(newActivities);
   }
@@ -25,17 +26,20 @@ const Bodycare = () => {
       <div className="programs-container pt-5 pe-lg-5">      
             <h1 className='text-warning'>  <FontAwesomeIcon icon={faDumbbell}></FontAwesomeIcon> Women Body Care</h1>
              <h4 className='pb-4'>Our Programs </h4>
-             <div className="row row-cols-1 row-cols-lg-3 g-4">         
-              {
-               programs.map(program => <Programs program={program} key={program.id} handleAddToCart={handleAddToCart} ></Programs>)
-              }
-           </div>
-       </div>
-          <div className="activities-container ">
-          <Activities activities={activities}></Activities>                  
-          </div>
-      </div>
-     )
+               <div className="row row-cols-1 row-cols-lg-3 g-4">         
+                {
+                 programs.map(program => <Programs program={program} key={program.id} handleAddToList={handleAddToList} ></Programs>)
+                }
+              </div>
+               <div>
+                  <Blog></Blog>
+               </div>            
+              </div>
+                 <div className="activities-container ">
+                 <Activities activities={activities}></Activities>                  
+                </div>
+             </div>
+     ) 
   }
  
   

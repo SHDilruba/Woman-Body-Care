@@ -1,7 +1,7 @@
 import React from 'react';
 import'./Programs.css';
 
-const Programs = ({program, handleAddToCart}) => {
+const Programs = ({program, handleAddToList}) => {
   const {name, picture, description, Age, time} = program;
   return (
           <div className="col">
@@ -13,7 +13,7 @@ const Programs = ({program, handleAddToCart}) => {
                      <p  className='m-0'> Age limit: {Age} - 40</p>
                        <p className='pb-5'>Time required: {time}m</p>
                         <div className="add-btn d-grid col-11 mx-auto">
-                           <button onClick={() => handleAddToCart(program)} className="btn btn-warning p-2" type="button">Add to List</button>
+                           <button onClick={() => handleAddToList(program)} className="btn btn-warning p-2" type="button">Add to List</button>
                        </div>
                     </div>
                 </div>
